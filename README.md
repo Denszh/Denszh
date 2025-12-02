@@ -1,6 +1,6 @@
 👋 Hi there,nice to meet you,bro☕
 
-Based in Guangzhou | Backend Engineer
+Based in Guangzhou | Backend Engineer🧑‍💻
 
 🚀 Tech Focus
 
@@ -71,6 +71,7 @@ VS Code                  9 hrs 43 mins       ████████░░░�
 
 
  Last Updated on 30/11/2025 15:27:53 UTC
+ 
 <!--END_SECTION:waka-->
 
 <!--Language🚀-->
