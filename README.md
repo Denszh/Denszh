@@ -71,9 +71,7 @@ VS Code                  9 hrs 43 mins       ████████░░░�
 
 
  Last Updated on 30/11/2025 15:27:53 UTC
- 
 <!--END_SECTION:waka-->
-
 <!--Language🚀-->
 ---
 <!--[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=HealUP&layout=compact&hide_border=true)](https://github.com/HealUP)-->
