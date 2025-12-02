@@ -1,6 +1,14 @@
 👋 Hi there,nice to meet you,bro☕
+Based in Guangzhou | Backend Engineer
+🚀 Tech Focus
+Primary: Backend Development
+Secondary: Frontend (Learning & Exploring)
+Always curious about building end-to-end solutions and optimizing technical workflows.
+🏃‍♂️ Beyond Coding
+Sports Enthusiast: Triathlon (Swimming 🏊‍♂️ | Cycling 🚴‍♂️ | Running 🏃‍♂️) – Passionate about balancing physical fitness with tech creativity.
+Hobby: Tinkering with interesting projects, experimenting with new tools, and exploring side hustles.
+Goal: Grow into an independent developer who builds practical, user-centric products.
 ---
-💻A CS student, have a mania for self-taught backend web developer from china   
 📌[博客(Blog)](https://github.com/HealUP/MyBlog)
 
  <!-- waka-box start -->
@@ -61,16 +69,16 @@ VS Code                  9 hrs 43 mins       ████████░░░�
  Last Updated on 30/11/2025 15:27:53 UTC
 <!--END_SECTION:waka-->
 
-Language🚀
+<!--Language🚀-->
 ---
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=HealUP&layout=compact&hide_border=true)](https://github.com/HealUP)
+<!--[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=HealUP&layout=compact&hide_border=true)](https://github.com/HealUP)-->
 
-Repo🧑‍💻
+<!--Repo🧑‍💻-->
 ---
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=HealUP&count_private=true&show_icons=true&theme=gruvbox&hide_border=true) 
+<!--![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=HealUP&count_private=true&show_icons=true&theme=gruvbox&hide_border=true)-->
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HealUP&repo=InternetEy&theme=transparent)](https://github.com/HealUP/InternetEy) &emsp;
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HealUP&repo=CampusExperience&theme=transparent)](https://github.com/HealUP/CampusExperience)
+<!--[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HealUP&repo=InternetEy&theme=transparent)](https://github.com/HealUP/InternetEy) &emsp; -->
+<!--[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HealUP&repo=CampusExperience&theme=transparent)](https://github.com/HealUP/CampusExperience) -->
 
 
 Contact me📱:
