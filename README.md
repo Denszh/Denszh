@@ -1,13 +1,17 @@
 👋 Hi there,nice to meet you,bro☕
+
 Based in Guangzhou | Backend Engineer
+
 🚀 Tech Focus
+
 Primary: Backend Development
+
 Secondary: Frontend (Learning & Exploring)
+
 Always curious about building end-to-end solutions and optimizing technical workflows.
-🏃‍♂️ Beyond Coding
-Sports Enthusiast: Triathlon (Swimming 🏊‍♂️ | Cycling 🚴‍♂️ | Running 🏃‍♂️) – Passionate about balancing physical fitness with tech creativity.
-Hobby: Tinkering with interesting projects, experimenting with new tools, and exploring side hustles.
-Goal: Grow into an independent developer who builds practical, user-centric products.
+
+🎯Goal: Grow into an independent developer who builds practical, user-centric products.
+
 ---
 📌[博客(Blog)](https://github.com/HealUP/MyBlog)
 
@@ -16,7 +20,7 @@ Goal: Grow into an independent developer who builds practical, user-centric prod
  
 🧲**Interested**
 --
-Coding💻| study📖| sports：running&Orienteering🏃‍| Photography📸| recording✍️| Interesting😁
+Coding💻| study📖| Sports Enthusiast: Triathlon (Swimming 🏊‍♂️ | Cycling 🚴‍♂️ | Running 🏃‍♂️) ‍| Photography📸| recording✍️| Interesting😁
 
 WakaTime👨‍💻
 ---
