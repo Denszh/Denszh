@@ -72,17 +72,6 @@ VS Code                  9 hrs 43 mins       ████████░░░�
 
  Last Updated on 30/11/2025 15:27:53 UTC
 <!--END_SECTION:waka-->
-<!--Language🚀-->
----
-<!--[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=HealUP&layout=compact&hide_border=true)](https://github.com/HealUP)-->
-
-<!--Repo🧑‍💻-->
----
-<!--![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=HealUP&count_private=true&show_icons=true&theme=gruvbox&hide_border=true)-->
-
-<!--[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HealUP&repo=InternetEy&theme=transparent)](https://github.com/HealUP/InternetEy) &emsp; -->
-<!--[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HealUP&repo=CampusExperience&theme=transparent)](https://github.com/HealUP/CampusExperience) -->
-
 
 Contact me📱:
 ---
