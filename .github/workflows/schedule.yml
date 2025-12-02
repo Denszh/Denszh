@@ -30,6 +30,6 @@ jobs:
           # chart
           SHOW_LOC_CHART: "False"
           # push name
-          COMMIT_USERNAME: "HealUP"
+          COMMIT_USERNAME: "Denszh"
           # EMAIL
           COMMIT_EMAIL: "denszhi@gmail.com"
