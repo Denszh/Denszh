@@ -1,27 +1,17 @@
-👋 Hi there,nice to meet you,bro☕
+👋 Hi there
 
-Based in Guangzhou | Backend Engineer🧑‍💻
+Self-improving coder & sports enthusiast 💪
 
-🚀 Tech Focus
+Focused on **vibe coding** for global products 🌍
 
-Primary: Backend Development
+Aiming to be a digital nomad 🚀
 
-Secondary: Frontend (Learning & Exploring)
-
-Always curious about building end-to-end solutions and optimizing technical workflows.
-
-🎯Goal: Grow into an independent developer who builds practical, user-centric products.
+Follow my journey!🛥️
 
 ---
-📌[博客(Blog)](https://github.com/HealUP/MyBlog)
-
  <!-- waka-box start -->
  <!-- waka-box end -->
  
-🧲**Interested**
---
-Coding💻| study📖| Sports Enthusiast: Triathlon (Swimming 🏊‍♂️ | Cycling 🚴‍♂️ | Running 🏃‍♂️) ‍| Photography📸| recording✍️| Interesting😁
-
 WakaTime👨‍💻
 ---
 <!--START_SECTION:waka-->
@@ -75,4 +65,4 @@ VS Code                  9 hrs 44 mins       ██████░░░░░�
 
 Contact me📱:
 ---
-📮Mail:deng_zh@icloud.com  
+📮Mail:denszhi@gmail.com
