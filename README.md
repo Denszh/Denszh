@@ -8,7 +8,6 @@ Aiming to be a digital nomad 🚀
 
 Follow my journey!🛥️
 
----
  <!-- waka-box start -->
  <!-- waka-box end -->
  
