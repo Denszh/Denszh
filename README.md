@@ -10,25 +10,7 @@ Follow my journey!🛥️
 
 ## 🤖 AI Token Usage
 
-**1. classic**
-
-![classic](https://tokscale.ai/api/embed/Denszh/svg?template=classic&color=purple&graph=1)
-
-**2. terminal**
-
-![terminal](https://tokscale.ai/api/embed/Denszh/svg?template=terminal&color=purple&graph=1)
-
-**3. orbit**
-
-![orbit](https://tokscale.ai/api/embed/Denszh/svg?template=orbit&color=purple&graph=1)
-
-**4. receipt**
-
-![receipt](https://tokscale.ai/api/embed/Denszh/svg?template=receipt&color=purple&graph=1)
-
-**5. graph**
-
-![graph](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1)
+![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1)
 
 <!-- waka-box start -->
  <!-- waka-box end -->
