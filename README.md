@@ -12,6 +12,25 @@ Follow my journey!🛥️
 
 ![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1)
 
+## 📊 Token Usage by Model
+
+<!-- USAGE:START -->
+```console
+all time · 7.7B tokens · 47,486 messages
+
+  deepseek-v4-flash         █████░░░░░░░░░░░░░░░   25.4%     2.0B
+  DeepSeek V4 Flash         ████░░░░░░░░░░░░░░░░   17.6%     1.4B
+  mimo-v2.5                 ██░░░░░░░░░░░░░░░░░░   10.5%   813.4M
+  deepseek-v4-pro           ██░░░░░░░░░░░░░░░░░░    8.3%   640.0M
+  mimo-v2.5-pro             ██░░░░░░░░░░░░░░░░░░    7.9%   613.8M
+  gpt-5.5                   █░░░░░░░░░░░░░░░░░░░    6.3%   490.6M
+  claude-haiku-4-5          █░░░░░░░░░░░░░░░░░░░    4.5%   347.6M
+  GPT-5.4 最强推理模型      █░░░░░░░░░░░░░░░░░░░    4.3%   331.2M
+  minimax-m2.7              █░░░░░░░░░░░░░░░░░░░    3.0%   230.4M
+  gpt-5.6-sol               ░░░░░░░░░░░░░░░░░░░░    2.2%   166.9M
+```
+<!-- USAGE:END -->
+
 <!-- waka-box start -->
  <!-- waka-box end -->
  
