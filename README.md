@@ -8,7 +8,11 @@ Aiming to be a digital nomad 🚀
 
 Follow my journey!🛥️
 
- <!-- waka-box start -->
+## 🤖 AI Token Usage
+
+![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1)
+
+<!-- waka-box start -->
  <!-- waka-box end -->
  
 WakaTime👨‍💻
