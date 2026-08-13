@@ -16,18 +16,18 @@ Follow my journey!🛥️
 
 <!-- USAGE:START -->
 ```console
-all time · 9.9B tokens · 74,072 messages
+all time · 10.4B tokens · 74,877 messages
 
-  deepseek-v4-flash         ████░░░░░░░░░░░░░░░░    21%     2.0B
-  deepseek-ai/deepseek-v4-flash███░░░░░░░░░░░░░░░░░    14%     1.4B
-  DeepSeek V4 Flash         ███░░░░░░░░░░░░░░░░░    14%     1.4B
+  deepseek-v4-flash         ████░░░░░░░░░░░░░░░░    20%     2.1B
+  deepseek-ai/deepseek-v4-flash███░░░░░░░░░░░░░░░░░    13%     1.4B
+  DeepSeek V4 Flash         ███░░░░░░░░░░░░░░░░░    13%     1.4B
   mimo-v2.5                 ██░░░░░░░░░░░░░░░░░░     8%   815.4M
   mimo-v2.5-pro             █░░░░░░░░░░░░░░░░░░░     7%   698.2M
   deepseek-v4-pro           █░░░░░░░░░░░░░░░░░░░     6%   640.0M
   gpt-5.5                   █░░░░░░░░░░░░░░░░░░░     5%   499.0M
+  auto                      █░░░░░░░░░░░░░░░░░░░     4%   408.9M
   claude-haiku-4-5          █░░░░░░░░░░░░░░░░░░░     3%   347.6M
   minimax-m3                █░░░░░░░░░░░░░░░░░░░     3%   339.7M
-  GPT-5.4 最强推理模型      █░░░░░░░░░░░░░░░░░░░     3%   331.2M
 ```
 <!-- USAGE:END -->
 
