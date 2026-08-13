@@ -8,16 +8,6 @@ Aiming to be a digital nomad 🚀
 
 Follow my journey!🛥️
 
-## 📈 GitHub Stats
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=Denszh&theme=radical" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Denszh&theme=github" alt="GitHub Activity Graph" />
-</p>
-
 ## 🤖 AI Token Usage
 
 ![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=202608131556)
