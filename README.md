@@ -10,13 +10,13 @@ Follow my journey!🛥️
 
 ## 🤖 AI Token Usage
 
-![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=202608131532)
+![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=202608131538)
 
 ## 📊 Token Usage by Model
 
 <!-- USAGE:START -->
 ```console
-all time · 10.3B tokens · 73,075 messages
+all time · 10.3B tokens · 73,091 messages
 
   deepseek-ai/deepseek-v4-flash██████░░░░░░░░░░░░░░    32%     3.3B
   deepseek-v4-flash         ███░░░░░░░░░░░░░░░░░    17%     1.8B
@@ -28,6 +28,41 @@ all time · 10.3B tokens · 73,075 messages
   gpt-5.4                   █░░░░░░░░░░░░░░░░░░░     4%   388.4M
   claude-haiku-4-5          █░░░░░░░░░░░░░░░░░░░     3%   347.6M
   deepseek-v4-pro           █░░░░░░░░░░░░░░░░░░░     3%   264.0M
+  minimax-m2.7              ░░░░░░░░░░░░░░░░░░░░     2%   232.8M
+  gpt-5.6-sol               ░░░░░░░░░░░░░░░░░░░░     2%   166.9M
+  minimax-m3                ░░░░░░░░░░░░░░░░░░░░     2%   157.5M
+  qwen3.5-plus              ░░░░░░░░░░░░░░░░░░░░     1%   127.9M
+  m3                        ░░░░░░░░░░░░░░░░░░░░     1%   124.1M
+  claude-sonnet-4           ░░░░░░░░░░░░░░░░░░░░     1%   109.2M
+  codex-auto-review         ░░░░░░░░░░░░░░░░░░░░     1%   104.5M
+  claude-sonnet-4-5         ░░░░░░░░░░░░░░░░░░░░     1%   101.8M
+  deepseek-v4-flash-free    ░░░░░░░░░░░░░░░░░░░░     1%    87.4M
+  claude-opus-4-1           ░░░░░░░░░░░░░░░░░░░░     1%    77.0M
+  claude-opus-4-8-thinking-high░░░░░░░░░░░░░░░░░░░░     0%    41.5M
+  minimax-m2.5-free         ░░░░░░░░░░░░░░░░░░░░     0%    40.9M
+  sensenova-6.7-flash-lite  ░░░░░░░░░░░░░░░░░░░░     0%    12.7M
+  minimax-m2.5              ░░░░░░░░░░░░░░░░░░░░     0%     6.5M
+  kimi-k2.5-free            ░░░░░░░░░░░░░░░░░░░░     0%     6.4M
+  composer-2.5-fast         ░░░░░░░░░░░░░░░░░░░░     0%     6.1M
+  claude-fable-5-thinking-high░░░░░░░░░░░░░░░░░░░░     0%     5.7M
+  gpt-5.5-medium            ░░░░░░░░░░░░░░░░░░░░     0%     5.6M
+  mimo-v2-omni              ░░░░░░░░░░░░░░░░░░░░     0%     3.4M
+  claude-opus-4-7-thinking-xhigh░░░░░░░░░░░░░░░░░░░░     0%     2.9M
+  glm-5.2                   ░░░░░░░░░░░░░░░░░░░░     0%     2.4M
+  z-ai/glm4.7               ░░░░░░░░░░░░░░░░░░░░     0%     1.2M
+  mimo-v2.5-pro-ultraspeed  ░░░░░░░░░░░░░░░░░░░░     0%     851K
+  m2.7                      ░░░░░░░░░░░░░░░░░░░░     0%     390K
+  m2.7-highspeed            ░░░░░░░░░░░░░░░░░░░░     0%     315K
+  agent_review              ░░░░░░░░░░░░░░░░░░░░     0%     263K
+  claude-3-5-haiku          ░░░░░░░░░░░░░░░░░░░░     0%     259K
+  /users/dd/localmodels/mlx-qwen3.5-9b-4bit░░░░░░░░░░░░░░░░░░░░     0%     212K
+  claude-opus-4-7-thinking-high░░░░░░░░░░░░░░░░░░░░     0%     110K
+  grok-composer-2.5-fast    ░░░░░░░░░░░░░░░░░░░░     0%      90K
+  big-pickle                ░░░░░░░░░░░░░░░░░░░░     0%      85K
+  GPT-5.3-Codex 代码优化模型░░░░░░░░░░░░░░░░░░░░     0%      76K
+  z-ai/glm5                 ░░░░░░░░░░░░░░░░░░░░     0%      36K
+  gpt-5.6-terra             ░░░░░░░░░░░░░░░░░░░░     0%      31K
+  deepseek-v3               ░░░░░░░░░░░░░░░░░░░░     0%      12K
 ```
 <!-- USAGE:END -->
 
