@@ -10,21 +10,21 @@ Follow my journey!🛥️
 
 ## 🤖 AI Token Usage
 
-![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1)
+![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=202608131433)
 
 ## 📊 Token Usage by Model
 
 <!-- USAGE:START -->
 ```console
-all time · 10.3B tokens · 73,243 messages
+all time · 10.3B tokens · 72,930 messages
 
-  deepseek-v4-flash         ████░░░░░░░░░░░░░░░░    21%     2.1B
+  deepseek-v4-flash         ████░░░░░░░░░░░░░░░░    21%     2.2B
   deepseek-ai/deepseek-v4-flash███░░░░░░░░░░░░░░░░░    14%     1.4B
   DeepSeek V4 Flash         ███░░░░░░░░░░░░░░░░░    13%     1.4B
   mimo-v2.5                 ██░░░░░░░░░░░░░░░░░░     8%   813.4M
   deepseek-v4-pro           █░░░░░░░░░░░░░░░░░░░     6%   640.0M
   mimo-v2.5-pro             █░░░░░░░░░░░░░░░░░░░     6%   614.5M
-  gpt-5.5                   █░░░░░░░░░░░░░░░░░░░     5%   545.7M
+  gpt-5.5                   █░░░░░░░░░░░░░░░░░░░     5%   499.0M
   auto                      █░░░░░░░░░░░░░░░░░░░     4%   408.9M
   claude-haiku-4-5          █░░░░░░░░░░░░░░░░░░░     3%   347.6M
   GPT-5.4 最强推理模型      █░░░░░░░░░░░░░░░░░░░     3%   331.2M
