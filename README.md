@@ -16,9 +16,9 @@ Follow my journey!🛥️
 
 <!-- USAGE:START -->
 ```console
-all time · 10.0B tokens · 74,414 messages
+all time · 10.0B tokens · 74,435 messages
 
-  deepseek-v4-flash         ████░░░░░░░░░░░░░░░░   20.4%     2.0B
+  deepseek-v4-flash         ████░░░░░░░░░░░░░░░░   20.5%     2.0B
   deepseek-ai/deepseek-v4-flash███░░░░░░░░░░░░░░░░░   14.0%     1.4B
   DeepSeek V4 Flash         ███░░░░░░░░░░░░░░░░░   13.7%     1.4B
   mimo-v2.5                 ██░░░░░░░░░░░░░░░░░░    8.2%   815.4M
