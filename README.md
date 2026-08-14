@@ -10,13 +10,13 @@ Follow my journey!🛥️
 
 ## 🤖 AI Token Usage
 
-![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=202608141554)
+![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=202608141656)
 
 ## 📊 Token Usage by Model
 
 <!-- USAGE:START -->
 ```console
-all time · 10.8B tokens · 75,173 messages
+all time · 10.8B tokens · 75,210 messages
 
   deepseek-ai/deepseek-v4-flash ██████░░░░░░░░░░░░░░    31%     3.3B
   deepseek-v4-flash             ████░░░░░░░░░░░░░░░░    20%     2.1B
@@ -30,7 +30,7 @@ all time · 10.8B tokens · 75,173 messages
   deepseek-v4-pro               ░░░░░░░░░░░░░░░░░░░░     2%   264.0M
   minimax-m2.7                  ░░░░░░░░░░░░░░░░░░░░     2%   233.0M
   gpt-5.6-sol                   ░░░░░░░░░░░░░░░░░░░░     2%   166.9M
-  minimax-m3                    ░░░░░░░░░░░░░░░░░░░░     2%   163.1M
+  minimax-m3                    ░░░░░░░░░░░░░░░░░░░░     2%   163.3M
   m3                            ░░░░░░░░░░░░░░░░░░░░     1%   157.2M
   qwen3.5-plus                  ░░░░░░░░░░░░░░░░░░░░     1%   127.9M
   claude-sonnet-4               ░░░░░░░░░░░░░░░░░░░░     1%   109.2M
