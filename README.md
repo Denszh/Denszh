@@ -74,26 +74,6 @@ Sunday                   766 commits         ███░░░░░░░░�
 ```
 
 
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Shanghai
-
-💬 Programming Languages: 
-Other                    22 hrs 11 mins      █████████████░░░░░░░░░░░░   51.21 % 
-Python                   6 hrs 13 mins       ████░░░░░░░░░░░░░░░░░░░░░   14.35 % 
-Markdown                 4 hrs 59 mins       ███░░░░░░░░░░░░░░░░░░░░░░   11.51 % 
-TypeScript               2 hrs 52 mins       ██░░░░░░░░░░░░░░░░░░░░░░░   06.65 % 
-SQL                      1 hr 53 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   04.35 % 
-
-🔥 Editors: 
-Chrome                   21 hrs 1 min        ████████████░░░░░░░░░░░░░   48.53 % 
-VS Code                  19 hrs 33 mins      ███████████░░░░░░░░░░░░░░   45.13 % 
-Unknown Editor           1 hr 36 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   03.70 % 
-Opencode Cli             30 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.17 % 
-Codex Vscode             27 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.05 % 
-```
-
 🤖 **AI Coding This Week** 
 
 ```text
