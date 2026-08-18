@@ -21,7 +21,7 @@ DARK_PALETTES = {
     'teal':   ['#161b22', '#0f3d33', '#0f7a5f', '#12b886', '#63e6be'],
 }
 
-CELL, GAP, R = 10, 3, 2          # 格子尺寸/间距/圆角
+CELL, GAP, R = 6, 2, 1.5         # 格子尺寸/间距/圆角（紧凑版，像 pin 卡片）
 MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 WEEKDAYS = ['', 'Mon', '', 'Wed', '', 'Fri', '']   # 周标签（周一/周三/周五）
 
@@ -48,15 +48,15 @@ def build(data, year, palette, title=None, show_legend=True):
     weeks = (grid_end - grid_start).days // 7 + 1
     cols = weeks
 
-    W = 12 + cols * (CELL + GAP) + 12
-    H = 28 + 7 * (CELL + GAP) + (18 if show_legend else 8)
+    W = 8 + cols * (CELL + GAP) + 8
+    H = 22 + 7 * (CELL + GAP) + (14 if show_legend else 6)
     s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">']
     s.append(f'<rect width="{W}" height="{H}" fill="{bg}"/>')
 
     # 标题
     if title:
-        s.append(f'<text x="12" y="18" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" '
-                 f'font-size="12" font-weight="600" fill="{pal[4]}">{title}</text>')
+        s.append(f'<text x="8" y="14" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" '
+                 f'font-size="10" font-weight="600" fill="{pal[4]}">{title}</text>')
 
     # 月份标签
     month_pos = {}
@@ -67,16 +67,16 @@ def build(data, year, palette, title=None, show_legend=True):
             month_pos[m.month] = col
         m += datetime.timedelta(days=7)
     for mon, col in month_pos.items():
-        x = 12 + col * (CELL + GAP)
-        s.append(f'<text x="{x}" y="30" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" '
-                 f'font-size="9" fill="{pal[4]}" opacity="0.7">{MONTHS[mon-1]}</text>')
+        x = 8 + col * (CELL + GAP)
+        s.append(f'<text x="{x}" y="23" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" '
+                 f'font-size="7" fill="{pal[4]}" opacity="0.7">{MONTHS[mon-1]}</text>')
 
     # 周标签
     for i, label in enumerate(WEEKDAYS):
         if not label: continue
-        y = 40 + i * (CELL + GAP) + CELL - 2
-        s.append(f'<text x="4" y="{y}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" '
-                 f'font-size="8" fill="{pal[4]}" opacity="0.6" text-anchor="end">{label}</text>')
+        y = 28 + i * (CELL + GAP) + CELL - 1
+        s.append(f'<text x="3" y="{y}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" '
+                 f'font-size="6" fill="{pal[4]}" opacity="0.6" text-anchor="end">{label}</text>')
 
     # 格子
     day = grid_start
@@ -85,8 +85,8 @@ def build(data, year, palette, title=None, show_legend=True):
             if day.year == year:
                 count = data.get(day.isoformat(), 0)
                 lv = level_of(count, 0)
-                x = 12 + col * (CELL + GAP)
-                y = 40 + row * (CELL + GAP)
+                x = 8 + col * (CELL + GAP)
+                y = 28 + row * (CELL + GAP)
                 if lv > 0:
                     s.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="{R}" fill="{pal[lv]}">'
                              f'<title>{day.isoformat()} {count}次</title></rect>')
@@ -96,14 +96,14 @@ def build(data, year, palette, title=None, show_legend=True):
 
     # 图例
     if show_legend:
-        lx = 12
-        ly = 40 + 7 * (CELL + GAP) + 12
-        s.append(f'<text x="{lx}" y="{ly+8}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" '
-                 f'font-size="8" fill="{pal[4]}" opacity="0.6">Less</text>')
+        lx = 8
+        ly = 28 + 7 * (CELL + GAP) + 8
+        s.append(f'<text x="{lx}" y="{ly+5}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" '
+                 f'font-size="6" fill="{pal[4]}" opacity="0.6">Less</text>')
         for i in range(5):
-            s.append(f'<rect x="{lx+30+i*(CELL+3)}" y="{ly}" width="{CELL}" height="{CELL}" rx="{R}" fill="{pal[i]}"/>')
-        s.append(f'<text x="{lx+30+5*(CELL+3)}" y="{ly+8}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" '
-                 f'font-size="8" fill="{pal[4]}" opacity="0.6">More</text>')
+            s.append(f'<rect x="{lx+22+i*(CELL+2)}" y="{ly}" width="{CELL}" height="{CELL}" rx="{R}" fill="{pal[i]}"/>')
+        s.append(f'<text x="{lx+22+5*(CELL+2)}" y="{ly+5}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" '
+                 f'font-size="6" fill="{pal[4]}" opacity="0.6">More</text>')
 
     s.append('</svg>')
     return '\n'.join(s)
