@@ -30,8 +30,9 @@ WEEK_START="$(date -v-7d +%Y%m%d 2>/dev/null || date -d '7 days ago' +%Y%m%d)"
 coros-mcp call-tool --tool querySleepData --arguments-json "{\"startDate\":\"${WEEK_START}\",\"endDate\":\"${TODAY}\"}" 2>/dev/null > /tmp/sports-data/sleep.json || true
 coros-mcp call-tool --tool queryFitnessAssessmentOverview 2>/dev/null > /tmp/sports-data/fit.json || true
 
-# 2. 生成热力图（2026 运动次数）
-python3 - "$CUR_YEAR" /tmp/sports-data << 'PYEOF'
+# 2. 生成热力图（每年单独生成，GitHubPoster 跨年有 bug）
+for y in $(seq "$FIRST_YEAR" "$CUR_YEAR"); do
+  python3 - "$y" /tmp/sports-data << 'PYEOF' || true
 import json, sys, re
 year = sys.argv[1]
 data_dir = sys.argv[2]
@@ -45,15 +46,17 @@ try:
     json.dump(counts, open(f'{data_dir}/count-{year}.json','w'))
     print(f'  ✅ {year} 热力图数据: {len(counts)} 天')
 except Exception as e:
-    print(f'  ⚠️ 热力图数据失败: {e}')
+    print(f'  ⚠️ {year} 热力图数据失败: {e}')
 PYEOF
-"$GP_VENV/bin/github_poster" json \
-  --json_file "/tmp/sports-data/count-${CUR_YEAR}.json" \
-  --year "$CUR_YEAR" --me "Denszh 💪 Training" \
-  --background-color "#0d1117" --without-type-name >/dev/null 2>&1 || true
-SVG_SRC="$(dirname "$("$GP_VENV/bin/github_poster" --help >/dev/null 2>&1; echo)")/OUT_FOLDER/json.svg"
-[ -f /private/tmp/OUT_FOLDER/json.svg ] && SVG_SRC=/private/tmp/OUT_FOLDER/json.svg
-[ -f "$SVG_SRC" ] && cp "$SVG_SRC" "$ASSETS/training-${CUR_YEAR}.svg" && echo "  ✅ 热力图已生成 assets/training-${CUR_YEAR}.svg"
+  GP_DIR="/tmp/gp-$y"
+  mkdir -p "$GP_DIR" && rm -rf "$GP_DIR/OUT_FOLDER"
+  (cd "$GP_DIR" && "$GP_VENV/bin/github_poster" json \
+    --json_file "/tmp/sports-data/count-$y.json" \
+    --year "$y" --me "Denszh 💪 Training" \
+    --background-color "#0d1117" --without-type-name >/dev/null 2>&1)
+  [ -f "$GP_DIR/OUT_FOLDER/json.svg" ] && cp "$GP_DIR/OUT_FOLDER/json.svg" "$ASSETS/training-$y.svg" \
+    && echo "  ✅ 热力图已生成 assets/training-$y.svg"
+done
 
 # 3. 生成 SPORTS 区块
 SPORTS_BLOCK="$(python3 - "$FIRST_YEAR" "$CUR_YEAR" /tmp/sports-data << 'PYEOF'
@@ -159,6 +162,12 @@ t5k = re.search(r'5 km Prediction: (.+)', fit).group(1).strip() if fit else '?'
 thalf = re.search(r'Half Marathon Prediction: (.+)', fit).group(1).strip() if fit else '?'
 tfull = re.search(r'^Marathon Prediction: (.+)', fit, re.M).group(1).strip() if fit else '?'
 
+# 热力图（每年一张）
+heatmap_lines = '\n'.join(
+    f'![{y}](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-{y}.svg)'
+    for y in range(cur_year, first_year - 1, -1)
+)
+
 block = f"""<!--SPORTS:START-->
 ## 🏃 Sports & Fitness
 
@@ -167,7 +176,8 @@ block = f"""<!--SPORTS:START-->
 **年度训练**:
 {year_block}
 
-![{cur_year} 训练热力图](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-{cur_year}.svg)
+**训练热力图**:
+{heatmap_lines}
 
 **最近 5 次**: {recent_line}
 
