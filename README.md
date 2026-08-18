@@ -122,6 +122,16 @@ OpenCode                 0 lines             ░░░░░░░░░░░�
  Last Updated on 16/08/2026 15:32:56 UTC
 <!--END_SECTION:waka-->
 
+<!--SPORTS:START-->
+## 🏃 Sports & Fitness
+
+🏅 VO2max 56 · 恢复 100% · ⏱ 5K 22:58 · 半马 1:47:34 · 全马 3:48:17
+
+**2026 至今**: 💪 力量 48 次 · 🏃 跑步 27 次 236km · 🏊 游泳 9 次 9km（84 次 · 245 km · 81 h）
+**本周 (08/11–08/17)**: 💪 力量 5 次 6h40m
+
+<!--SPORTS:END-->
+
 Contact me📱:
 ---
 📮Mail:denszhi@gmail.com
