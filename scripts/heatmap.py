@@ -21,7 +21,7 @@ DARK_PALETTES = {
     'teal':   ['#161b22', '#0f3d33', '#0f7a5f', '#12b886', '#63e6be'],
 }
 
-CELL, GAP, R = 6, 2, 1.5         # 格子尺寸/间距/圆角（紧凑版，像 pin 卡片）
+CELL, GAP, R = 8, 2, 2            # 格子尺寸/间距/圆角（适中版）
 MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 WEEKDAYS = ['', 'Mon', '', 'Wed', '', 'Fri', '']   # 周标签（周一/周三/周五）
 
