@@ -8,27 +8,9 @@ Aiming to be a digital nomad 🚀
 
 Follow my journey!🛥️
 
-## 📊 GitHub Stats
-
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-one-bice.vercel.app/api?username=Denszh&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-one-bice.vercel.app/api?username=Denszh&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=default" />
-    <img align="center" src="https://github-readme-stats-one-bice.vercel.app/api?username=Denszh&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=dark" alt="GitHub Stats" />
-  </picture>
-</a>
-
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=Denszh&layout=compact&hide_border=true&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=Denszh&layout=compact&hide_border=true&theme=default" />
-    <img align="center" src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=Denszh&layout=compact&hide_border=true&theme=dark" alt="Top Languages" />
-  </picture>
-</a>
-
 ## 🤖 AI Token Usage
 
-![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=202608181803)
+![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=20260818)
 
 ## 📊 Token Usage by Model
 
@@ -71,25 +53,6 @@ WakaTime👨‍💻
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-397.62%20thousand%20lines%20of%20code-blue?style=flat)
 
-**I'm a Night 🦉** 
-
-```text
-🌞 Morning                159 commits         █░░░░░░░░░░░░░░░░░░░░░░░░   02.68 % 
-🌆 Daytime                428 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   07.21 % 
-🌃 Evening                4688 commits        ████████████████████░░░░░   78.95 % 
-🌙 Night                  663 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.17 % 
-```
-📅 **I'm Most Productive on Thursday** 
-
-```text
-Monday                   707 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.91 % 
-Tuesday                  773 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.02 % 
-Wednesday                843 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.20 % 
-Thursday                 1021 commits        ████░░░░░░░░░░░░░░░░░░░░░   17.19 % 
-Friday                   978 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.47 % 
-Saturday                 850 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.31 % 
-Sunday                   766 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.90 % 
-```
 
 
 🤖 **AI Coding This Week** 
@@ -136,10 +99,24 @@ OpenCode                 0 lines             ░░░░░░░░░░░�
 ![2026 训练热力图](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=20260818)
 
 **本周运动** (08/12–08/18):
-08-17 💪 力量 1h06m · 08-16 💪 力量 3h00m · 08-15 💪 力量 46m · 08-13 💪 力量 1h04m · 08-11 💪 力量 43m
+```
+08-17 💪 力量   1h06m ███████░░░░░░░░░░░░░    37%
+08-16 💪 力量   3h00m ████████████████████   100%
+08-15 💪 力量     46m █████░░░░░░░░░░░░░░░    25%
+08-13 💪 力量   1h04m ███████░░░░░░░░░░░░░    36%
+08-11 💪 力量     43m █████░░░░░░░░░░░░░░░    24%
+```
 
 **本周睡眠** (08/11–08/18):
-08-11 😴93 7h33m · 08-13 😴94 7h18m · 08-14 😴95 7h20m · 08-15 😴95 7h24m · 08-16 😴55 7h20m ⚠️ · 08-17 😴94 7h27m · 08-18 😴97 8h9m
+```
+08-11 😴 93   7h33m ███████████████████░    93%
+08-13 😴 94   7h18m ███████████████████░    94%
+08-14 😴 95   7h20m ███████████████████░    95%
+08-15 😴 95   7h24m ███████████████████░    95%
+08-16 😴 55   7h20m ███████████░░░░░░░░░    55% ⚠️
+08-17 😴 94   7h27m ███████████████████░    94%
+08-18 😴 97    8h9m ███████████████████░    97%
+```
 
 <!--SPORTS:END-->
 

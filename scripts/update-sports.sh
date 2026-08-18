@@ -120,17 +120,25 @@ import datetime as _dt
 _cache_v = _dt.date.today().strftime('%Y%m%d')
 heatmap_lines = f"![{cur_year}](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-{cur_year}.svg?v={_cache_v})"
 
-# 最近一周运动（7 天内）
+# 最近一周运动（7 天内，bar 图）
 _week_ago = (_dt.date.today() - _dt.timedelta(days=7)).isoformat()
 week_recs = sorted([r for r in all_recs if r['date'] >= _week_ago], key=lambda r: r['date'], reverse=True)
-week_parts = []
-for r in week_recs:
-    label = MERGE.get(r['type'], r['type'])
-    d = r['date'].split('-')
-    km = f" {r.get('km',0):.2f}km" if r.get('km',0) >= 1 else ""
-    week_parts.append(f"{d[1]}-{d[2]} {label}{km} {fmt_dur(r.get('min',0))}")
-week_line = ' · '.join(week_parts) if week_parts else '无记录'
 _week_hdr = f"**本周运动** ({(_dt.date.today()-_dt.timedelta(days=6)).strftime('%m/%d')}–{_dt.date.today().strftime('%m/%d')}):"
+if week_recs:
+    _mx_dur = max(r.get('min', 0) for r in week_recs) or 1
+    week_bar = []
+    for r in week_recs:
+        label = MERGE.get(r['type'], r['type'])
+        d = r['date'].split('-')
+        dur = r.get('min', 0)
+        pct = dur / _mx_dur * 100
+        filled = round(pct / 5)
+        bar = '█' * filled + '░' * (20 - filled)
+        km = f" {r.get('km',0):.2f}km" if r.get('km',0) >= 1 else ""
+        week_bar.append(f"{d[1]}-{d[2]} {label:<5}{fmt_dur(dur):>7} {bar} {pct:5.0f}%{km}")
+    week_block = '\n'.join(week_bar)
+else:
+    week_block = '无记录'
 
 # 本周睡眠
 sleep_txt = load_json('sleep.json')
@@ -146,16 +154,19 @@ for line in sleep_txt.split('\n'):
         if tm: sleeps[-1]['dur'] = f"{tm.group(1)}h{tm.group(2)}m"
 sleeps = [s for s in sleeps if 'score' in s]
 if sleeps:
-    sleep_parts = []
+    sleep_bar = []
     for s in sleeps:
         d = s['date'].split('-')
-        flag = ' ⚠️' if s.get('score', 100) < 70 else ''
-        sleep_parts.append(f"{d[1]}-{d[2]} 😴{s['score']} {s.get('dur','')}{flag}")
-    sleep_line = ' · '.join(sleep_parts)
+        score = s.get('score', 0)
+        filled = round(score / 5)
+        bar = '█' * filled + '░' * (20 - filled)
+        flag = ' ⚠️' if score < 70 else ''
+        sleep_bar.append(f"{d[1]}-{d[2]} 😴{score:>3} {s.get('dur',''):>7} {bar} {score:5.0f}%{flag}")
+    sleep_block = '\n'.join(sleep_bar)
     d1, d2 = sleeps[0]['date'].split('-'), sleeps[-1]['date'].split('-')
     sleep_hdr = f"**本周睡眠** ({d1[1]}/{d1[2]}–{d2[1]}/{d2[2]}):"
 else:
-    sleep_hdr, sleep_line = '**本周睡眠**:', '无数据'
+    sleep_hdr, sleep_block = '**本周睡眠**:', '无数据'
 
 block = f"""<!--SPORTS:START-->
 ## 🏃 Sports & Fitness
@@ -168,10 +179,14 @@ block = f"""<!--SPORTS:START-->
 ![{cur_year} 训练热力图](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-{cur_year}.svg?v={_cache_v})
 
 {_week_hdr}
-{week_line}
+```
+{week_block}
+```
 
 {sleep_hdr}
-{sleep_line}
+```
+{sleep_block}
+```
 
 <!--SPORTS:END-->"""
 print(block)
