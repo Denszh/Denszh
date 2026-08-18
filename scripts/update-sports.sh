@@ -151,9 +151,11 @@ t5k = re.search(r'5 km Prediction: (.+)', fit).group(1).strip() if fit else '?'
 thalf = re.search(r'Half Marathon Prediction: (.+)', fit).group(1).strip() if fit else '?'
 tfull = re.search(r'^Marathon Prediction: (.+)', fit, re.M).group(1).strip() if fit else '?'
 
-# 热力图（每年一张）
+# 热力图（每年一张，v 参数防 Camo 缓存）
+import datetime as _dt
+_cache_v = _dt.date.today().strftime('%Y%m%d')
 heatmap_lines = '\n'.join(
-    f'![{y}](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-{y}.svg)'
+    f'![{y}](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-{y}.svg?v={_cache_v})'
     for y in range(cur_year, first_year - 1, -1)
 )
 

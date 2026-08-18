@@ -133,9 +133,9 @@ OpenCode                 0 lines             ░░░░░░░░░░░�
 - 2024: 💪 力量 22次 12h · 🏃 跑步 9次 30km 4h · 🚴 骑行 9次 196km 12h · 🏋️ 有氧 3次 2h · 🏃 越野跑 1次 12km 3h · 🤸 跳绳 1次
 
 **训练热力图**:
-![2026](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg)
-![2025](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2025.svg)
-![2024](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2024.svg)
+![2026](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=20260818)
+![2025](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2025.svg?v=20260818)
+![2024](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2024.svg?v=20260818)
 
 **最近 5 次**: 08-17 💪 力量 1h06m · 08-16 💪 力量 3h00m · 08-15 💪 力量 46m · 08-13 💪 力量 1h04m · 08-11 💪 力量 43m
 
