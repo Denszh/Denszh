@@ -21,11 +21,10 @@ done
 # 睡眠近 7 天
 WEEK_START="$(date -v-7d +%Y%m%d 2>/dev/null || date -d '7 days ago' +%Y%m%d)"
 coros-mcp call-tool --tool querySleepData --arguments-json "{\"startDate\":\"${WEEK_START}\",\"endDate\":\"${TODAY}\"}" 2>/dev/null > /tmp/sports-data/sleep.json || true
-coros-mcp call-tool --tool queryFitnessAssessmentOverview 2>/dev/null > /tmp/sports-data/fit.json || true
 
-# 2. 生成热力图（每年，heatmap.py 自绘 GitHub 风格）
-for y in $(seq "$FIRST_YEAR" "$CUR_YEAR"); do
-  python3 - "$y" /tmp/sports-data << 'PYEOF' || true
+# 2. 生成热力图（只最近一年，heatmap.py 自绘 GitHub 风格）
+y="$CUR_YEAR"
+python3 - "$y" /tmp/sports-data << 'PYEOF' || true
 import json, sys, re
 year = sys.argv[1]
 data_dir = sys.argv[2]
@@ -45,7 +44,6 @@ PYEOF
   python3 "$HEATMAP" "/tmp/sports-data/count-$y.json" "$ASSETS/training-$y.svg" \
     --year "$y" --title "$y · $N_DAYS 天" --color green \
     && echo "  ✅ 热力图已生成 assets/training-$y.svg"
-done
 
 # 3. 生成 SPORTS 区块
 SPORTS_BLOCK="$(python3 - "$FIRST_YEAR" "$CUR_YEAR" /tmp/sports-data << 'PYEOF'
@@ -56,7 +54,7 @@ first_year, cur_year, data_dir = int(sys.argv[1]), int(sys.argv[2]), sys.argv[3]
 
 MERGE = {
     'Pool Swim':'🏊 游泳','Open Water Swim':'🏊 游泳',
-    'Outdoor Run':'🏃 跑步','Indoor Run':'🏃 跑步','Trail Run':'🏃 越野跑',
+    'Outdoor Run':'🏃 跑步','Indoor Run':'🏃 跑步','Trail Run':'🏃 跑步','Track Run':'🏃 跑步',
     'Strength':'💪 力量','Cycling':'🚴 骑行','Triathlon':'🏊 铁三',
     'Hike':'🥾 徒步','Jump Rope':'🤸 跳绳','Floor Climb':'🧗 爬楼','Gym Cardio':'🏋️ 有氧',
     'Walk':'🚶 步行','GPS Cardio':'🗺️ 户外有氧','Track Run':'🏃 田径','Rowing':'🚣 划船',
@@ -90,37 +88,51 @@ def fmt_dur(m):
     m = int(round(m))
     return f"{m//60}h{m%60:02d}m" if m >= 60 else f"{m}m"
 
-# 年度统计
-year_lines = []
+# All Time 聚合（first_year ~ cur_year）
+all_agg = defaultdict(lambda: {'n':0,'km':0.0,'h':0.0})
 all_recs = []
-for y in range(cur_year, first_year - 1, -1):
+for y in range(first_year, cur_year + 1):
     recs = parse_records(load_json(f'{y}.json'))
     all_recs.extend(recs)
-    agg = defaultdict(lambda: {'n':0,'km':0.0,'h':0.0})
     for r in recs:
         k = MERGE.get(r['type'], r['type'])
-        a = agg[k]; a['n'] += 1; a['km'] += r.get('km',0); a['h'] += r.get('min',0)/60
-    if not agg: continue
-    parts = []
-    for k, a in sorted(agg.items(), key=lambda x: -x[1]['n']):
-        s = f"{k} {a['n']}次"
-        if a['km'] >= 1: s += f" {a['km']:.0f}km"
-        if a['h'] >= 1: s += f" {a['h']:.0f}h"
-        parts.append(s)
-    year_lines.append(f"- {y}: {' · '.join(parts)}")
-year_block = '\n'.join(year_lines)
+        a = all_agg[k]; a['n'] += 1; a['km'] += r.get('km',0); a['h'] += r.get('min',0)/60
 
-# 最近 5 次
-recent = sorted(all_recs, key=lambda r: r['date'], reverse=True)[:5]
-recent_parts = []
-for r in recent:
+# All Time 柱状图（tokscale bar 风格）
+ITEMS = [
+    ('🏃 跑步', all_agg['🏃 跑步']['km'], 'km'),
+    ('🚴 骑行', all_agg['🚴 骑行']['km'], 'km'),
+    ('🏊 游泳', all_agg['🏊 游泳']['km'], 'km'),
+    ('💪 力量', all_agg['💪 力量']['h'], 'h'),
+]
+_mx = max(v for _, v, _ in ITEMS) or 1
+bar_lines = []
+for name, v, unit in ITEMS:
+    pct = v / _mx * 100
+    filled = round(pct / 5)
+    bar = '█' * filled + '░' * (20 - filled)
+    val_str = f"{v:,.0f}{unit}"
+    bar_lines.append(f"{name:<8}{val_str:>8} {bar} {pct:5.0f}%")
+bar_block = '\n'.join(bar_lines)
+
+# 热力图（只最近一年）
+import datetime as _dt
+_cache_v = _dt.date.today().strftime('%Y%m%d')
+heatmap_lines = f"![{cur_year}](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-{cur_year}.svg?v={_cache_v})"
+
+# 最近一周运动（7 天内）
+_week_ago = (_dt.date.today() - _dt.timedelta(days=7)).isoformat()
+week_recs = sorted([r for r in all_recs if r['date'] >= _week_ago], key=lambda r: r['date'], reverse=True)
+week_parts = []
+for r in week_recs:
     label = MERGE.get(r['type'], r['type'])
     d = r['date'].split('-')
     km = f" {r.get('km',0):.2f}km" if r.get('km',0) >= 1 else ""
-    recent_parts.append(f"{d[1]}-{d[2]} {label}{km} {fmt_dur(r.get('min',0))}")
-recent_line = ' · '.join(recent_parts) if recent_parts else '无记录'
+    week_parts.append(f"{d[1]}-{d[2]} {label}{km} {fmt_dur(r.get('min',0))}")
+week_line = ' · '.join(week_parts) if week_parts else '无记录'
+_week_hdr = f"**本周运动** ({(_dt.date.today()-_dt.timedelta(days=6)).strftime('%m/%d')}–{_dt.date.today().strftime('%m/%d')}):"
 
-# 睡眠近 7 天
+# 本周睡眠
 sleep_txt = load_json('sleep.json')
 sleeps = []
 cur = None
@@ -145,40 +157,18 @@ if sleeps:
 else:
     sleep_hdr, sleep_line = '**本周睡眠**:', '无数据'
 
-# 体能
-fit = load_json('fit.json')
-vo2 = re.search(r'VO2max: (\d+)', fit).group(1) if fit else '?'
-t5k = re.search(r'5 km Prediction: (.+)', fit).group(1).strip() if fit else '?'
-thalf = re.search(r'Half Marathon Prediction: (.+)', fit).group(1).strip() if fit else '?'
-tfull = re.search(r'^Marathon Prediction: (.+)', fit, re.M).group(1).strip() if fit else '?'
-
-# 热力图（每年一张，v 参数防 Camo 缓存；3+2 并排表格）
-import datetime as _dt
-_cache_v = _dt.date.today().strftime('%Y%m%d')
-_years_desc = list(range(cur_year, first_year - 1, -1))
-_rows = []
-for _i in range(0, len(_years_desc), 3):
-    _chunk = _years_desc[_i:_i+3]
-    _rows.append('| ' + ' | '.join(str(_y) for _y in _chunk) + ' |')
-    _rows.append('|' + '---|' * len(_chunk))
-    _rows.append('| ' + ' | '.join(
-        f'![{_y}](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-{_y}.svg?v={_cache_v})'
-        for _y in _chunk) + ' |')
-    _rows.append('')
-heatmap_lines = '\n'.join(_rows).strip()
-
 block = f"""<!--SPORTS:START-->
 ## 🏃 Sports & Fitness
 
-🏅 VO2max {vo2} · ⏱ 5K {t5k} · 半马 {thalf} · 全马 {tfull}
+**All Time ({first_year}–{cur_year})**:
+```
+{bar_block}
+```
 
-**年度训练**:
-{year_block}
+![{cur_year} 训练热力图](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-{cur_year}.svg?v={_cache_v})
 
-**训练热力图**:
-{heatmap_lines}
-
-**最近 5 次**: {recent_line}
+{_week_hdr}
+{week_line}
 
 {sleep_hdr}
 {sleep_line}
