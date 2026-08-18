@@ -1,23 +1,16 @@
 #!/bin/bash
 # 更新 README Sports & Fitness 区块（高驰 COROS 数据）
-# 依赖: coros-mcp (npm i -g coros-mcp, 已登录) + GitHubPoster (自动安装到 ~/.venvs/github-poster)
+# 依赖: coros-mcp (npm i -g coros-mcp, 已登录) + Python3 (heatmap.py 生成热力图)
 # 用法: ./scripts/update-sports.sh [--push]
 set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 README="$REPO_DIR/README.md"
 ASSETS="$REPO_DIR/assets"
+HEATMAP="$REPO_DIR/scripts/heatmap.py"
 TODAY="$(date +%Y%m%d)"
 CUR_YEAR="$(date +%Y)"
 FIRST_YEAR=2024   # 有记录的第一年
-GP_VENV="${GP_VENV:-$HOME/.venvs/github-poster}"
-
-# GitHubPoster 懒安装
-if [ ! -x "$GP_VENV/bin/github_poster" ]; then
-  echo "⚙️ 安装 GitHubPoster..."
-  python3.11 -m venv "$GP_VENV"
-  "$GP_VENV/bin/pip" install -q 'github_poster[all]'
-fi
 
 # 1. 拉取运动数据（2024 ~ 当前年）
 mkdir -p /tmp/sports-data
@@ -30,7 +23,7 @@ WEEK_START="$(date -v-7d +%Y%m%d 2>/dev/null || date -d '7 days ago' +%Y%m%d)"
 coros-mcp call-tool --tool querySleepData --arguments-json "{\"startDate\":\"${WEEK_START}\",\"endDate\":\"${TODAY}\"}" 2>/dev/null > /tmp/sports-data/sleep.json || true
 coros-mcp call-tool --tool queryFitnessAssessmentOverview 2>/dev/null > /tmp/sports-data/fit.json || true
 
-# 2. 生成热力图（每年单独生成，GitHubPoster 跨年有 bug）
+# 2. 生成热力图（每年，heatmap.py 自绘 GitHub 风格）
 for y in $(seq "$FIRST_YEAR" "$CUR_YEAR"); do
   python3 - "$y" /tmp/sports-data << 'PYEOF' || true
 import json, sys, re
@@ -48,13 +41,9 @@ try:
 except Exception as e:
     print(f'  ⚠️ {year} 热力图数据失败: {e}')
 PYEOF
-  GP_DIR="/tmp/gp-$y"
-  mkdir -p "$GP_DIR" && rm -rf "$GP_DIR/OUT_FOLDER"
-  (cd "$GP_DIR" && "$GP_VENV/bin/github_poster" json \
-    --json_file "/tmp/sports-data/count-$y.json" \
-    --year "$y" --me "Denszh 💪 Training" \
-    --background-color "#0d1117" --without-type-name >/dev/null 2>&1)
-  [ -f "$GP_DIR/OUT_FOLDER/json.svg" ] && cp "$GP_DIR/OUT_FOLDER/json.svg" "$ASSETS/training-$y.svg" \
+  N_DAYS=$(python3 -c "import json;print(len(json.load(open('/tmp/sports-data/count-$y.json'))))" 2>/dev/null || echo 0)
+  python3 "$HEATMAP" "/tmp/sports-data/count-$y.json" "$ASSETS/training-$y.svg" \
+    --year "$y" --title "$y · $N_DAYS 天" --color green \
     && echo "  ✅ 热力图已生成 assets/training-$y.svg"
 done
 
