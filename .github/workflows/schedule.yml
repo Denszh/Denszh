@@ -37,3 +37,23 @@ jobs:
           COMMIT_USERNAME: "Denszh"
           # EMAIL
           COMMIT_EMAIL: "denszhi@gmail.com"
+      # waka-readme-stats 无法关闭昼夜/星期统计，提交后自动删除
+      - name: Trim night owl & weekday stats
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          python3 - <<'EOF'
+          import re
+          readme = open('README.md').read()
+          new = re.sub(r"\*\*I'm a (?:Night|Early).*?```\n", "", readme, flags=re.S)
+          new = re.sub(r"📅 \*\*I'm Most Productive on .*?```\n", "", new, flags=re.S)
+          if new != readme:
+              open('README.md','w').write(new)
+              print('已删除昼夜/星期统计')
+          else:
+              print('无需清理')
+          EOF
+          if ! git diff --quiet README.md; then
+            git -c user.name="Denszh" -c user.email="denszhi@gmail.com" commit -am "chore: trim waka night/weekday stats"
+            git push https://x-access-token:${GH_TOKEN}@github.com/Denszh/Denszh.git HEAD:main
+          fi
