@@ -8,6 +8,24 @@ Aiming to be a digital nomad 🚀
 
 Follow my journey!🛥️
 
+## 📊 GitHub Stats
+
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-one-bice.vercel.app/api?username=Denszh&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-one-bice.vercel.app/api?username=Denszh&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=default" />
+    <img align="center" src="https://github-readme-stats-one-bice.vercel.app/api?username=Denszh&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=dark" alt="GitHub Stats" />
+  </picture>
+</a>
+
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=Denszh&layout=compact&hide_border=true&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=Denszh&layout=compact&hide_border=true&theme=default" />
+    <img align="center" src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=Denszh&layout=compact&hide_border=true&theme=dark" alt="Top Languages" />
+  </picture>
+</a>
+
 ## 🤖 AI Token Usage
 
 ![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=202608181154)
