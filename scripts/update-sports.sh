@@ -71,6 +71,12 @@ def fmt_parts(agg):
         parts.append(f"{label} {x['count']} 次{km}")
     return ' · '.join(parts)
 
+def fmt_dur(minutes):
+    m = int(round(minutes))
+    if m >= 60:
+        return f"{m//60}h{m%60:02d}m"
+    return f"{m}m"
+
 fit = get_text(os.environ['FIT'])
 rec = get_text(os.environ['REC'])
 year_txt = get_text(os.environ['YEAR_DATA'])
@@ -87,6 +93,35 @@ ya = agg_by(year_recs)
 tot_n = sum(x['count'] for x in ya.values())
 tot_km = sum(x['km'] for x in ya.values())
 tot_h = sum(x['min'] for x in ya.values()) / 60
+
+# 最近 5 次明细（按日期倒序）
+recent = sorted(year_recs, key=lambda r: r['date'], reverse=True)[:5]
+recent_parts = []
+for r in recent:
+    label = MERGE.get(r['type'], r['type'])
+    d = r['date'].split('-')
+    dd = f"{d[1]}-{d[2]}"
+    km = f" {r.get('km', 0):.2f}km" if r.get('km', 0) >= 1 else ""
+    recent_parts.append(f"{dd} {label}{km} {fmt_dur(r.get('min', 0))}")
+recent_line = ' · '.join(recent_parts) if recent_parts else '无记录'
+
+# 月度聚合（倒序，最近月在前）
+by_month = defaultdict(lambda: defaultdict(lambda: {'count': 0, 'km': 0.0, 'min': 0.0}))
+for r in year_recs:
+    ym = r['date'][:7]
+    k = MERGE.get(r['type'], r['type'])
+    x = by_month[ym][k]
+    x['count'] += 1
+    x['km'] += r.get('km', 0)
+    x['min'] += r.get('min', 0)
+month_lines = []
+for ym in sorted(by_month.keys(), reverse=True):
+    parts = []
+    for label, x in sorted(by_month[ym].items(), key=lambda kv: -kv[1]['count']):
+        km = f" {x['km']:.0f}km" if x['km'] >= 1 else ""
+        parts.append(f"{label} {x['count']}{km}")
+    month_lines.append(f"{ym[5:]}月: {' · '.join(parts)}")
+month_block = '\n'.join(f"- {ml}" for ml in month_lines)
 
 week_recs = parse_records(week_txt)
 week_recs.sort(key=lambda r: r['date'])
@@ -111,8 +146,12 @@ block = f"""<!--SPORTS:START-->
 
 🏅 VO2max {vo2} · 恢复 {rec_pct}% · ⏱ 5K {t5k} · 半马 {thalf} · 全马 {tfull}
 
+**最近 5 次**: {recent_line}
+
 {year_line}
-{week_line}
+
+**月度统计**:
+{month_block}
 
 <!--SPORTS:END-->"""
 print(block)
