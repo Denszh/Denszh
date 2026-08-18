@@ -131,11 +131,17 @@ OpenCode                 0 lines             ░░░░░░░░░░░�
 - 2026: 💪 力量 48次 48h · 🏃 跑步 27次 236km 25h · 🏊 游泳 9次 9km 7h
 - 2025: 🏊 游泳 86次 84km 51h · 🏃 跑步 54次 346km 34h · 🚴 骑行 13次 837km 43h · 💪 力量 5次 3h · 🤸 跳绳 2次 · 🥾 徒步 2次 16km 8h · 🧗 爬楼 1次 · 🏊 铁三 1次 5km · 🏋️ 有氧 1次
 - 2024: 💪 力量 22次 12h · 🏃 跑步 9次 30km 4h · 🚴 骑行 9次 196km 12h · 🏋️ 有氧 3次 2h · 🏃 越野跑 1次 12km 3h · 🤸 跳绳 1次
+- 2023: 🏃 跑步 73次 290km 30h · 🏊 游泳 7次 3km 2h · 🚶 步行 3次 9km 5h · 🏋️ 有氧 3次 2h · 🤸 跳绳 2次 · 🚣 划船 1次 2km · 🗺️ 户外有氧 1次 5km 4h
+- 2022: 🏃 跑步 101次 336km 35h · 🚶 步行 6次 9km 4h · 🗺️ 户外有氧 5次 22km 13h · 🏃 田径 4次 20km 2h · 🏋️ 有氧 3次 2h · 💪 力量 2次 · 🏊 游泳 1次
 
 **训练热力图**:
-![2026](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=20260818)
-![2025](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2025.svg?v=20260818)
-![2024](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2024.svg?v=20260818)
+| 2026 | 2025 | 2024 |
+|---|---|---|
+| ![2026](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=20260818) | ![2025](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2025.svg?v=20260818) | ![2024](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2024.svg?v=20260818) |
+
+| 2023 | 2022 |
+|---|---|
+| ![2023](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2023.svg?v=20260818) | ![2022](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2022.svg?v=20260818) |
 
 **最近 5 次**: 08-17 💪 力量 1h06m · 08-16 💪 力量 3h00m · 08-15 💪 力量 46m · 08-13 💪 力量 1h04m · 08-11 💪 力量 43m
 

@@ -10,7 +10,7 @@ ASSETS="$REPO_DIR/assets"
 HEATMAP="$REPO_DIR/scripts/heatmap.py"
 TODAY="$(date +%Y%m%d)"
 CUR_YEAR="$(date +%Y)"
-FIRST_YEAR=2024   # 有记录的第一年
+FIRST_YEAR=2022   # 有记录的第一年
 
 # 1. 拉取运动数据（2024 ~ 当前年）
 mkdir -p /tmp/sports-data
@@ -59,6 +59,7 @@ MERGE = {
     'Outdoor Run':'🏃 跑步','Indoor Run':'🏃 跑步','Trail Run':'🏃 越野跑',
     'Strength':'💪 力量','Cycling':'🚴 骑行','Triathlon':'🏊 铁三',
     'Hike':'🥾 徒步','Jump Rope':'🤸 跳绳','Floor Climb':'🧗 爬楼','Gym Cardio':'🏋️ 有氧',
+    'Walk':'🚶 步行','GPS Cardio':'🗺️ 户外有氧','Track Run':'🏃 田径','Rowing':'🚣 划船',
 }
 
 def load_json(name):
@@ -151,13 +152,20 @@ t5k = re.search(r'5 km Prediction: (.+)', fit).group(1).strip() if fit else '?'
 thalf = re.search(r'Half Marathon Prediction: (.+)', fit).group(1).strip() if fit else '?'
 tfull = re.search(r'^Marathon Prediction: (.+)', fit, re.M).group(1).strip() if fit else '?'
 
-# 热力图（每年一张，v 参数防 Camo 缓存）
+# 热力图（每年一张，v 参数防 Camo 缓存；3+2 并排表格）
 import datetime as _dt
 _cache_v = _dt.date.today().strftime('%Y%m%d')
-heatmap_lines = '\n'.join(
-    f'![{y}](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-{y}.svg?v={_cache_v})'
-    for y in range(cur_year, first_year - 1, -1)
-)
+_years_desc = list(range(cur_year, first_year - 1, -1))
+_rows = []
+for _i in range(0, len(_years_desc), 3):
+    _chunk = _years_desc[_i:_i+3]
+    _rows.append('| ' + ' | '.join(str(_y) for _y in _chunk) + ' |')
+    _rows.append('|' + '---|' * len(_chunk))
+    _rows.append('| ' + ' | '.join(
+        f'![{_y}](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-{_y}.svg?v={_cache_v})'
+        for _y in _chunk) + ' |')
+    _rows.append('')
+heatmap_lines = '\n'.join(_rows).strip()
 
 block = f"""<!--SPORTS:START-->
 ## 🏃 Sports & Fitness
