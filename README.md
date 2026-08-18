@@ -96,7 +96,7 @@ OpenCode                 0 lines             ░░░░░░░░░░░�
 💪 力量         64h █░░░░░░░░░░░░░░░░░░░     5%
 ```
 
-![2026 训练热力图](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=20260818)
+![2026 训练热力图](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=202608181824)
 
 **本周运动** (08/12–08/18):
 ```

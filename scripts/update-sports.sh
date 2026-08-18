@@ -117,7 +117,7 @@ bar_block = '\n'.join(bar_lines)
 
 # 热力图（只最近一年）
 import datetime as _dt
-_cache_v = _dt.date.today().strftime('%Y%m%d')
+_cache_v = _dt.datetime.now().strftime('%Y%m%d%H%M')
 heatmap_lines = f"![{cur_year}](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-{cur_year}.svg?v={_cache_v})"
 
 # 最近一周运动（7 天内，bar 图）
