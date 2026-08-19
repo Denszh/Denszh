@@ -89,7 +89,7 @@ def build(data, year, palette, title=None, show_legend=True):
                 y = 28 + row * (CELL + GAP)
                 if lv > 0:
                     s.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="{R}" fill="{pal[lv]}">'
-                             f'<title>{day.isoformat()} {count}次</title></rect>')
+                             f'<title>{day.isoformat()} {count} sessions</title></rect>')
                 else:
                     s.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="{R}" fill="{pal[0]}"/>')
             day += datetime.timedelta(days=1)

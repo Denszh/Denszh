@@ -36,13 +36,13 @@ try:
         m = re.match(r'^(\d+)\. .+? — (\d{4}-\d{2}-\d{2})', line)
         if m: counts[m.group(2)] = counts.get(m.group(2), 0) + 1
     json.dump(counts, open(f'{data_dir}/count-{year}.json','w'))
-    print(f'  ✅ {year} 热力图数据: {len(counts)} 天')
+    print(f'  ✅ {year} heatmap data: {len(counts)} days')
 except Exception as e:
     print(f'  ⚠️ {year} 热力图数据失败: {e}')
 PYEOF
   N_DAYS=$(python3 -c "import json;print(len(json.load(open('/tmp/sports-data/count-$y.json'))))" 2>/dev/null || echo 0)
   python3 "$HEATMAP" "/tmp/sports-data/count-$y.json" "$ASSETS/training-$y.svg" \
-    --year "$y" --title "$y · $N_DAYS 天" --color green \
+    --year "$y" --title "$y · $N_DAYS days" --color green \
     && echo "  ✅ 热力图已生成 assets/training-$y.svg"
 
 # 3. 生成 SPORTS 区块
@@ -53,11 +53,11 @@ from collections import defaultdict
 first_year, cur_year, data_dir = int(sys.argv[1]), int(sys.argv[2]), sys.argv[3]
 
 MERGE = {
-    'Pool Swim':'🏊 游泳','Open Water Swim':'🏊 游泳',
-    'Outdoor Run':'🏃 跑步','Indoor Run':'🏃 跑步','Trail Run':'🏃 跑步','Track Run':'🏃 跑步',
-    'Strength':'💪 力量','Cycling':'🚴 骑行','Triathlon':'🏊 铁三',
-    'Hike':'🥾 徒步','Jump Rope':'🤸 跳绳','Floor Climb':'🧗 爬楼','Gym Cardio':'🏋️ 有氧',
-    'Walk':'🚶 步行','GPS Cardio':'🗺️ 户外有氧','Track Run':'🏃 田径','Rowing':'🚣 划船',
+    'Pool Swim':'🏊 Swimming','Open Water Swim':'🏊 Swimming',
+    'Outdoor Run':'🏃 Running','Indoor Run':'🏃 Running','Trail Run':'🏃 Running','Track Run':'🏃 Running',
+    'Strength':'💪 Strength','Cycling':'🚴 Cycling','Triathlon':'🏊 Triathlon',
+    'Hike':'🥾 Hiking','Jump Rope':'🤸 Jump Rope','Floor Climb':'🧗 Stairs','Gym Cardio':'🏋️ Cardio',
+    'Walk':'🚶 Walking','GPS Cardio':'🗺️ Outdoor Cardio','Rowing':'🚣 Rowing',
 }
 
 def load_json(name):
@@ -100,10 +100,10 @@ for y in range(first_year, cur_year + 1):
 
 # All Time 柱状图（tokscale bar 风格）
 ITEMS = [
-    ('🏃 跑步', all_agg['🏃 跑步']['km'], 'km'),
-    ('🚴 骑行', all_agg['🚴 骑行']['km'], 'km'),
-    ('🏊 游泳', all_agg['🏊 游泳']['km'], 'km'),
-    ('💪 力量', all_agg['💪 力量']['h'], 'h'),
+    ('🏃 Running', all_agg['🏃 Running']['km'], 'km'),
+    ('🚴 Cycling', all_agg['🚴 Cycling']['km'], 'km'),
+    ('🏊 Swimming', all_agg['🏊 Swimming']['km'], 'km'),
+    ('💪 Strength', all_agg['💪 Strength']['h'], 'h'),
 ]
 _mx = max(v for _, v, _ in ITEMS) or 1
 bar_lines = []
@@ -112,7 +112,7 @@ for name, v, unit in ITEMS:
     filled = round(pct / 5)
     bar = '█' * filled + '░' * (20 - filled)
     val_str = f"{v:,.0f}{unit}"
-    bar_lines.append(f"{name:<8}{val_str:>8} {bar} {pct:5.0f}%")
+    bar_lines.append(f"{name:<12}{val_str:>8} {bar} {pct:5.0f}%")
 bar_block = '\n'.join(bar_lines)
 
 # 热力图（只最近一年）
@@ -123,7 +123,7 @@ heatmap_lines = f"![{cur_year}](https://raw.githubusercontent.com/Denszh/Denszh/
 # 最近一周运动（7 天内，bar 图）
 _week_ago = (_dt.date.today() - _dt.timedelta(days=7)).isoformat()
 week_recs = sorted([r for r in all_recs if r['date'] >= _week_ago], key=lambda r: r['date'], reverse=True)
-_week_hdr = f"**本周运动** ({(_dt.date.today()-_dt.timedelta(days=6)).strftime('%m/%d')}–{_dt.date.today().strftime('%m/%d')}):"
+_week_hdr = f"**This Week's Workouts** ({(_dt.date.today()-_dt.timedelta(days=6)).strftime('%m/%d')}–{_dt.date.today().strftime('%m/%d')}):"
 if week_recs:
     _mx_dur = max(r.get('min', 0) for r in week_recs) or 1
     week_bar = []
@@ -135,10 +135,10 @@ if week_recs:
         filled = round(pct / 5)
         bar = '█' * filled + '░' * (20 - filled)
         km = f" {r.get('km',0):.2f}km" if r.get('km',0) >= 1 else ""
-        week_bar.append(f"{d[1]}-{d[2]} {label:<5}{fmt_dur(dur):>7} {bar} {pct:5.0f}%{km}")
+        week_bar.append(f"{d[1]}-{d[2]} {label:<9}{fmt_dur(dur):>7} {bar} {pct:5.0f}%{km}")
     week_block = '\n'.join(week_bar)
 else:
-    week_block = '无记录'
+    week_block = 'No workouts'
 
 # 本周睡眠
 sleep_txt = load_json('sleep.json')
@@ -164,9 +164,9 @@ if sleeps:
         sleep_bar.append(f"{d[1]}-{d[2]} 😴{score:>3} {s.get('dur',''):>7} {bar} {score:5.0f}%{flag}")
     sleep_block = '\n'.join(sleep_bar)
     d1, d2 = sleeps[0]['date'].split('-'), sleeps[-1]['date'].split('-')
-    sleep_hdr = f"**本周睡眠** ({d1[1]}/{d1[2]}–{d2[1]}/{d2[2]}):"
+    sleep_hdr = f"**This Week's Sleep** ({d1[1]}/{d1[2]}–{d2[1]}/{d2[2]}):"
 else:
-    sleep_hdr, sleep_block = '**本周睡眠**:', '无数据'
+    sleep_hdr, sleep_block = "**This Week's Sleep**:", 'No data'
 
 block = f"""<!--SPORTS:START-->
 ## 🏃 Sports & Fitness
@@ -176,7 +176,7 @@ block = f"""<!--SPORTS:START-->
 {bar_block}
 ```
 
-![{cur_year} 训练热力图](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-{cur_year}.svg?v={_cache_v})
+![{cur_year} Training Heatmap](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-{cur_year}.svg?v={_cache_v})
 
 {_week_hdr}
 ```
