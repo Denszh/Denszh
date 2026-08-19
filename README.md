@@ -121,7 +121,7 @@ Claude-Code              0 lines             ░░░░░░░░░░░�
 💪 力量         64h █░░░░░░░░░░░░░░░░░░░     5%
 ```
 
-![2026 训练热力图](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=202608191155)
+![2026 训练热力图](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=202608191156)
 
 **本周运动** (08/13–08/19):
 ```
