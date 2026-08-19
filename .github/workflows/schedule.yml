@@ -47,9 +47,10 @@ jobs:
           readme = open('README.md').read()
           new = re.sub(r"\*\*I'm a (?:Night|Early).*?```\n", "", readme, flags=re.S)
           new = re.sub(r"📅 \*\*I'm Most Productive on .*?```\n", "", new, flags=re.S)
+          new = re.sub(r"\n?\s*Last Updated on .*", "", new)
           if new != readme:
               open('README.md','w').write(new)
-              print('已删除昼夜/星期统计')
+              print('已清理 waka 多余区块')
           else:
               print('无需清理')
           EOF
