@@ -10,13 +10,13 @@ Follow my journey!🛥️
 
 ## 🤖 AI Token Usage
 
-![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=202608201306)
+![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=202608201408)
 
 ## 📊 Token Usage by Model
 
 <!-- USAGE:START -->
 ```console
-all time · 12.3B tokens · 80,108 messages
+all time · 12.3B tokens · 80,162 messages
 
   deepseek-ai/deepseek-v4-flash █████░░░░░░░░░░░░░░░    27%     3.4B
   deepseek-v4-flash             █████░░░░░░░░░░░░░░░    27%     3.3B
@@ -24,12 +24,12 @@ all time · 12.3B tokens · 80,108 messages
   mimo-v2.5-pro                 █░░░░░░░░░░░░░░░░░░░     5%   614.5M
   gpt-5.5                       █░░░░░░░░░░░░░░░░░░░     5%   603.7M
   deepseek-ai/deepseek-v4-pro   █░░░░░░░░░░░░░░░░░░░     4%   520.7M
-  gpt-5.4                       █░░░░░░░░░░░░░░░░░░░     4%   450.0M
+  gpt-5.4                       █░░░░░░░░░░░░░░░░░░░     4%   461.5M
   auto                          █░░░░░░░░░░░░░░░░░░░     3%   408.9M
   claude-haiku-4-5              █░░░░░░░░░░░░░░░░░░░     3%   347.6M
   deepseek-v4-pro               ░░░░░░░░░░░░░░░░░░░░     2%   264.0M
   minimax-m2.7                  ░░░░░░░░░░░░░░░░░░░░     2%   233.0M
-  minimax-m3                    ░░░░░░░░░░░░░░░░░░░░     2%   199.0M
+  minimax-m3                    ░░░░░░░░░░░░░░░░░░░░     2%   199.3M
   m3                            ░░░░░░░░░░░░░░░░░░░░     2%   187.5M
   gpt-5.6-sol                   ░░░░░░░░░░░░░░░░░░░░     1%   166.9M
   qwen3.5-plus                  ░░░░░░░░░░░░░░░░░░░░     1%   127.9M
