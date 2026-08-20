@@ -164,7 +164,7 @@ if sleeps:
         sleep_bar.append(f"{d[1]}-{d[2]} 😴{score:>3} {s.get('dur',''):>7} {bar} {score:5.0f}%{flag}")
     sleep_block = '\n'.join(sleep_bar)
     d1, d2 = sleeps[0]['date'].split('-'), sleeps[-1]['date'].split('-')
-    sleep_hdr = f"**This Week's Sleep** ({d1[1]}/{d1[2]}–{d2[1]}/{d2[2]}):"
+    sleep_hdr = f"**This Week's Sleep** ({(_dt.date.today()-_dt.timedelta(days=6)).strftime('%m/%d')}–{_dt.date.today().strftime('%m/%d')}):"
 else:
     sleep_hdr, sleep_block = "**This Week's Sleep**:", 'No data'
 
