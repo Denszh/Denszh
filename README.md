@@ -45,26 +45,26 @@ all time · 12.4B tokens · 80,919 messages
 WakaTime👨‍💻
 ---
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-2%2C815%20hrs%209%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-2%2C816%20hrs%2031%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-255%20hrs%2017%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-255%20hrs%2039%20mins-blue?style=flat)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-9-blue?style=flat)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-713.91%20thousand%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-713.93%20thousand%20lines%20of%20code-blue?style=flat)
 
 **I'm a Night 🦉** 
 
 ```text
 🌞 Morning                855 commits         █░░░░░░░░░░░░░░░░░░░░░░░░   04.01 % 
 🌆 Daytime                1484 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   06.96 % 
-🌃 Evening                16347 commits       ███████████████████░░░░░░   76.66 % 
-🌙 Night                  2639 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.38 % 
+🌃 Evening                16348 commits       ███████████████████░░░░░░   76.66 % 
+🌙 Night                  2639 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.37 % 
 ```
 📅 **I'm Most Productive on Thursday** 
 
 ```text
-Monday                   2577 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.08 % 
+Monday                   2578 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.09 % 
 Tuesday                  3065 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.37 % 
 Wednesday                3160 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.82 % 
 Thursday                 3640 commits        ████░░░░░░░░░░░░░░░░░░░░░   17.07 % 
@@ -83,31 +83,31 @@ Sunday                   2528 commits        ███░░░░░░░░�
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 19 hrs 32 mins (51.22%)
+⏱ AI Coding Time: 17 hrs 2 mins (45.52%)
 
-✍️ 12,265 lines written by AI, 404 lines written by hand (96.81% AI-written)
+✍️ 10,090 lines written by AI, 426 lines written by hand (95.95% AI-written)
 
-🔤 66,751,547 Input Tokens, 1,381,503 Output Tokens
+🔤 66,346,211 Input Tokens, 1,199,763 Output Tokens
 
-💵 $4128.93 Estimated AI Cost This Week
+💵 $3406.37 Estimated AI Cost This Week
 
-🧠 23 AI Sessions, 379 AI Prompts
+🧠 20 AI Sessions, 348 AI Prompts
 
-Deepseek                 11,160 lines        ██████████████████████░░░   86.80 % 
-M                        863 lines           ██░░░░░░░░░░░░░░░░░░░░░░░   06.71 % 
-GPT                      834 lines           ██░░░░░░░░░░░░░░░░░░░░░░░   06.49 % 
+Deepseek                 8,889 lines         █████████████████████░░░░   83.97 % 
+M                        863 lines           ██░░░░░░░░░░░░░░░░░░░░░░░   08.15 % 
+GPT                      834 lines           ██░░░░░░░░░░░░░░░░░░░░░░░   07.88 % 
 Opencode-Cli             0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 Claude-Code              0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 96.81% of written lines came from AI
-📝 Concise Prompter — average 288 characters per prompt
-🔁 Iterative Prompter — average 16 prompts per session
-🚀 High AI Trust — 4.73% of changed lines were hand-edited
+🤖 AI-Driven — 95.95% of written lines came from AI
+📝 Concise Prompter — average 186 characters per prompt
+🔁 Iterative Prompter — average 17 prompts per session
+🚀 High AI Trust — 4.66% of changed lines were hand-edited
 ```
 
 
- Last Updated on 24/08/2026 15:57:18 UTC
+ Last Updated on 25/08/2026 16:00:40 UTC
 <!--END_SECTION:waka-->
 
 <!--SPORTS:START-->
