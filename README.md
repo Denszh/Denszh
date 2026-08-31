@@ -10,28 +10,28 @@ Follow my journey!🛥️
 
 ## 🤖 AI Token Usage
 
-![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=202608211752)
+![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=202608311252)
 
 ## 📊 Token Usage by Model
 
 <!-- USAGE:START -->
 ```console
-all time · 12.4B tokens · 80,919 messages
+all time · 12.9B tokens · 82,837 messages
 
-  deepseek-v4-flash             ██████░░░░░░░░░░░░░░    28%     3.4B
-  deepseek-ai/deepseek-v4-flash █████░░░░░░░░░░░░░░░    27%     3.4B
-  mimo-v2.5                     █░░░░░░░░░░░░░░░░░░░     7%   813.4M
+  deepseek-v4-flash             ██████░░░░░░░░░░░░░░    30%     3.8B
+  deepseek-ai/deepseek-v4-flash █████░░░░░░░░░░░░░░░    26%     3.4B
+  mimo-v2.5                     █░░░░░░░░░░░░░░░░░░░     6%   813.4M
   mimo-v2.5-pro                 █░░░░░░░░░░░░░░░░░░░     5%   614.5M
-  gpt-5.5                       █░░░░░░░░░░░░░░░░░░░     5%   603.7M
+  gpt-5.5                       █░░░░░░░░░░░░░░░░░░░     5%   604.0M
   deepseek-ai/deepseek-v4-pro   █░░░░░░░░░░░░░░░░░░░     4%   520.7M
   gpt-5.4                       █░░░░░░░░░░░░░░░░░░░     4%   463.9M
   auto                          █░░░░░░░░░░░░░░░░░░░     3%   408.9M
   claude-haiku-4-5              █░░░░░░░░░░░░░░░░░░░     3%   347.6M
-  deepseek-v4-pro               ░░░░░░░░░░░░░░░░░░░░     2%   264.0M
+  deepseek-v4-pro               ░░░░░░░░░░░░░░░░░░░░     2%   264.5M
   minimax-m2.7                  ░░░░░░░░░░░░░░░░░░░░     2%   233.0M
-  minimax-m3                    ░░░░░░░░░░░░░░░░░░░░     2%   220.1M
-  m3                            ░░░░░░░░░░░░░░░░░░░░     2%   187.5M
-  gpt-5.6-sol                   ░░░░░░░░░░░░░░░░░░░░     1%   166.9M
+  minimax-m3                    ░░░░░░░░░░░░░░░░░░░░     2%   224.0M
+  m3                            ░░░░░░░░░░░░░░░░░░░░     2%   196.7M
+  gpt-5.6-sol                   ░░░░░░░░░░░░░░░░░░░░     1%   166.8M
   qwen3.5-plus                  ░░░░░░░░░░░░░░░░░░░░     1%   127.9M
   codex-auto-review             ░░░░░░░░░░░░░░░░░░░░     1%   111.3M
   claude-sonnet-4               ░░░░░░░░░░░░░░░░░░░░     1%   109.2M
