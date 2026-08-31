@@ -42,6 +42,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          # waka-readme-stats 在 docker container 内 commit+push，本 workspace 的 README 未同步
+          git fetch origin main
+          git checkout origin/main -- README.md
           python3 - <<'EOF'
           import re
           readme = open('README.md').read()

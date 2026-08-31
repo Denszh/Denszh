@@ -17,7 +17,7 @@ log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >> "$LOG"; }
 log "=== 开始 ==="
 
 cd "$REPO"
-git pull --quiet 2>>"$LOG" || { log "git pull 失败"; exit 1; }
+git pull --rebase --autostash 2>>"$LOG" || { log "git pull 失败"; exit 1; }
 
 # 1. 生成最新模型统计 JSON
 cd /tmp
@@ -105,6 +105,6 @@ log "创建 PR: $PR_URL"
 gh pr merge --merge --delete-branch >>"$LOG" 2>&1
 log "PR 已合并"
 git checkout main >>"$LOG" 2>&1
-git pull --quiet >>"$LOG" 2>&1
+git reset --hard origin/main >>"$LOG" 2>&1
 
 log "=== 完成 ==="
