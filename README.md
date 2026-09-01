@@ -10,13 +10,13 @@ Follow my journey!🛥️
 
 ## 🤖 AI Token Usage
 
-![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=202609010520)
+![Tokscale stats](https://tokscale.ai/api/embed/Denszh/svg?template=graph&color=purple&graph=1&v=202609011018)
 
 ## 📊 Token Usage by Model
 
 <!-- USAGE:START -->
 ```console
-all time · 13.0B tokens · 83,506 messages
+all time · 13.0B tokens · 83,517 messages
 
   deepseek-v4-flash             ██████░░░░░░░░░░░░░░    30%     3.9B
   deepseek-ai/deepseek-v4-flash █████░░░░░░░░░░░░░░░    26%     3.4B
@@ -27,7 +27,7 @@ all time · 13.0B tokens · 83,506 messages
   gpt-5.4                       █░░░░░░░░░░░░░░░░░░░     4%   463.9M
   auto                          █░░░░░░░░░░░░░░░░░░░     3%   408.9M
   claude-haiku-4-5              █░░░░░░░░░░░░░░░░░░░     3%   347.6M
-  minimax-m3                    ░░░░░░░░░░░░░░░░░░░░     2%   300.3M
+  minimax-m3                    ░░░░░░░░░░░░░░░░░░░░     2%   302.0M
   deepseek-v4-pro               ░░░░░░░░░░░░░░░░░░░░     2%   264.5M
   minimax-m2.7                  ░░░░░░░░░░░░░░░░░░░░     2%   233.0M
   m3                            ░░░░░░░░░░░░░░░░░░░░     2%   196.7M
@@ -115,34 +115,22 @@ Claude-Code              0 lines             ░░░░░░░░░░░�
 
 **All Time (2022–2026)**:
 ```
-🏃 Running    1,275km ████████████████████   100%
-🚴 Cycling    1,033km ████████████████░░░░    81%
-🏊 Swimming      96km ██░░░░░░░░░░░░░░░░░░     8%
-💪 Strength       66h █░░░░░░░░░░░░░░░░░░░     5%
+🏃 Running        0km ░░░░░░░░░░░░░░░░░░░░     0%
+🚴 Cycling        0km ░░░░░░░░░░░░░░░░░░░░     0%
+🏊 Swimming       0km ░░░░░░░░░░░░░░░░░░░░     0%
+💪 Strength        0h ░░░░░░░░░░░░░░░░░░░░     0%
 ```
 
-![2026 Training Heatmap](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=202608210900)
+![2026 Training Heatmap](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=202609010927)
 
-**This Week's Workouts** (08/15–08/21):
+**This Week's Workouts** (08/26–09/01):
 ```
-08-20 💪 Strength    54m ██████░░░░░░░░░░░░░░    30%
-08-19 💪 Strength    55m ██████░░░░░░░░░░░░░░    31%
-08-18 🏃 Running    38m ████░░░░░░░░░░░░░░░░    21% 5.02km
-08-17 💪 Strength  1h06m ███████░░░░░░░░░░░░░    37%
-08-16 💪 Strength  3h00m ████████████████████   100%
-08-15 💪 Strength    46m █████░░░░░░░░░░░░░░░    25%
+No workouts
 ```
 
-**This Week's Sleep** (08/15–08/21):
+**This Week's Sleep**:
 ```
-08-14 😴 95   7h20m ███████████████████░    95%
-08-15 😴 95   7h24m ███████████████████░    95%
-08-16 😴 55   7h20m ███████████░░░░░░░░░    55% ⚠️
-08-17 😴 94   7h27m ███████████████████░    94%
-08-18 😴 97    8h9m ███████████████████░    97%
-08-19 😴 98   8h21m ████████████████████    98%
-08-20 😴 97   7h43m ███████████████████░    97%
-08-21 😴 98   7h59m ████████████████████    98%
+No data
 ```
 
 <!--SPORTS:END-->
