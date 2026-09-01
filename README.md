@@ -115,34 +115,22 @@ Claude-Code              0 lines             ░░░░░░░░░░░�
 
 **All Time (2022–2026)**:
 ```
-🏃 Running    1,275km ████████████████████   100%
-🚴 Cycling    1,033km ████████████████░░░░    81%
-🏊 Swimming      96km ██░░░░░░░░░░░░░░░░░░     8%
-💪 Strength       66h █░░░░░░░░░░░░░░░░░░░     5%
+🏃 Running        0km ░░░░░░░░░░░░░░░░░░░░     0%
+🚴 Cycling        0km ░░░░░░░░░░░░░░░░░░░░     0%
+🏊 Swimming       0km ░░░░░░░░░░░░░░░░░░░░     0%
+💪 Strength        0h ░░░░░░░░░░░░░░░░░░░░     0%
 ```
 
-![2026 Training Heatmap](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=202608210900)
+![2026 Training Heatmap](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=202609010927)
 
-**This Week's Workouts** (08/15–08/21):
+**This Week's Workouts** (08/26–09/01):
 ```
-08-20 💪 Strength    54m ██████░░░░░░░░░░░░░░    30%
-08-19 💪 Strength    55m ██████░░░░░░░░░░░░░░    31%
-08-18 🏃 Running    38m ████░░░░░░░░░░░░░░░░    21% 5.02km
-08-17 💪 Strength  1h06m ███████░░░░░░░░░░░░░    37%
-08-16 💪 Strength  3h00m ████████████████████   100%
-08-15 💪 Strength    46m █████░░░░░░░░░░░░░░░    25%
+No workouts
 ```
 
-**This Week's Sleep** (08/15–08/21):
+**This Week's Sleep**:
 ```
-08-14 😴 95   7h20m ███████████████████░    95%
-08-15 😴 95   7h24m ███████████████████░    95%
-08-16 😴 55   7h20m ███████████░░░░░░░░░    55% ⚠️
-08-17 😴 94   7h27m ███████████████████░    94%
-08-18 😴 97    8h9m ███████████████████░    97%
-08-19 😴 98   8h21m ████████████████████    98%
-08-20 😴 97   7h43m ███████████████████░    97%
-08-21 😴 98   7h59m ████████████████████    98%
+No data
 ```
 
 <!--SPORTS:END-->
