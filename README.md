@@ -121,19 +121,19 @@ Claude-Code              0 lines             ░░░░░░░░░░░�
 💪 Strength       70h █░░░░░░░░░░░░░░░░░░░     6%
 ```
 
-![2026 Training Heatmap](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=202609030900)
+![2026 Training Heatmap](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=202609040900)
 
-**This Week's Workouts** (08/28–09/03):
+**This Week's Workouts** (08/29–09/04):
 ```
 08-29 🏃 Running  1h28m ████████████████████   100% 3.73km
-08-27 💪 Strength    54m ████████████░░░░░░░░    61%
 ```
 
-**This Week's Sleep** (08/28–09/03):
+**This Week's Sleep** (08/29–09/04):
 ```
 08-28 😴 87   6h44m █████████████████░░░    87%
 08-29 😴 81   7h28m ████████████████░░░░    81%
 08-30 😴 80    8h0m ████████████████░░░░    80%
+09-04 😴 74   7h36m ███████████████░░░░░    74%
 ```
 
 <!--SPORTS:END-->
