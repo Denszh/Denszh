@@ -45,27 +45,27 @@ all time · 13.0B tokens · 83,618 messages
 WakaTime👨‍💻
 ---
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-2%2C837%20hrs%2038%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-2%2C841%20hrs%207%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-273%20hrs%2043%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-277%20hrs%2041%20mins-blue?style=flat)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-2-blue?style=flat)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-763.31%20thousand%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-763.34%20thousand%20lines%20of%20code-blue?style=flat)
 
 **I'm a Night 🦉** 
 
 ```text
-🌞 Morning                960 commits         █░░░░░░░░░░░░░░░░░░░░░░░░   04.17 % 
+🌞 Morning                962 commits         █░░░░░░░░░░░░░░░░░░░░░░░░   04.18 % 
 🌆 Daytime                1650 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   07.16 % 
-🌃 Evening                17550 commits       ███████████████████░░░░░░   76.20 % 
-🌙 Night                  2873 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.47 % 
+🌃 Evening                17550 commits       ███████████████████░░░░░░   76.19 % 
+🌙 Night                  2874 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.48 % 
 ```
 📅 **I'm Most Productive on Thursday** 
 
 ```text
-Monday                   2804 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.17 % 
-Tuesday                  3344 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.52 % 
+Monday                   2805 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.18 % 
+Tuesday                  3346 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.53 % 
 Wednesday                3412 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.81 % 
 Thursday                 3923 commits        ████░░░░░░░░░░░░░░░░░░░░░   17.03 % 
 Friday                   3859 commits        ████░░░░░░░░░░░░░░░░░░░░░   16.75 % 
@@ -83,31 +83,31 @@ Sunday                   2712 commits        ███░░░░░░░░�
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 14 hrs 22 mins (41.21%)
+⏱ AI Coding Time: 19 hrs 14 mins (50.84%)
 
-✍️ 4,116 lines written by AI, 335 lines written by hand (92.47% AI-written)
+✍️ 7,304 lines written by AI, 372 lines written by hand (95.15% AI-written)
 
-🔤 61,532,993 Input Tokens, 1,773,913 Output Tokens
+🔤 74,445,840 Input Tokens, 2,374,750 Output Tokens
 
-💵 $2180.28 Estimated AI Cost This Week
+💵 $2402.96 Estimated AI Cost This Week
 
-🧠 38 AI Sessions, 265 AI Prompts
+🧠 48 AI Sessions, 378 AI Prompts
 
-Deepseek                 4,092 lines         ███████████████████████░░   92.50 % 
-Codex-Vscode             247 lines           █░░░░░░░░░░░░░░░░░░░░░░░░   05.58 % 
-GPT                      82 lines            ░░░░░░░░░░░░░░░░░░░░░░░░░   01.85 % 
-M                        3 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.07 % 
+Deepseek                 5,257 lines         █████████████████░░░░░░░░   67.90 % 
+GPT                      2,199 lines         ███████░░░░░░░░░░░░░░░░░░   28.40 % 
+Codex-Vscode             247 lines           █░░░░░░░░░░░░░░░░░░░░░░░░   03.19 % 
+M                        39 lines            ░░░░░░░░░░░░░░░░░░░░░░░░░   00.50 % 
 Opencode-Cli             0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 92.47% of written lines came from AI
-📄 Detailed Prompter — average 1,176 characters per prompt
-🔁 Iterative Prompter — average 7 prompts per session
-🚀 High AI Trust — 17.4% of changed lines were hand-edited
+🤖 AI-Driven — 95.15% of written lines came from AI
+📄 Detailed Prompter — average 842 characters per prompt
+🔁 Iterative Prompter — average 8 prompts per session
+🚀 High AI Trust — 12.23% of changed lines were hand-edited
 ```
 
 
- Last Updated on 07/09/2026 19:11:03 UTC
+ Last Updated on 08/09/2026 18:39:01 UTC
 <!--END_SECTION:waka-->
 
 <!--SPORTS:START-->
