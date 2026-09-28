@@ -45,32 +45,32 @@ all time · 13.0B tokens · 83,618 messages
 WakaTime👨‍💻
 ---
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-2%2C886%20hrs%206%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-2%2C890%20hrs%204%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-324%20hrs%2026%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-329%20hrs%207%20mins-blue?style=flat)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue?style=flat)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-763.72%20thousand%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-781.04%20thousand%20lines%20of%20code-blue?style=flat)
 
 **I'm a Night 🦉** 
 
 ```text
 🌞 Morning                972 commits         █░░░░░░░░░░░░░░░░░░░░░░░░   04.21 % 
-🌆 Daytime                1650 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   07.15 % 
-🌃 Evening                17550 commits       ███████████████████░░░░░░   76.09 % 
-🌙 Night                  2893 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.54 % 
+🌆 Daytime                1653 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   07.16 % 
+🌃 Evening                17552 commits       ███████████████████░░░░░░   76.08 % 
+🌙 Night                  2894 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.54 % 
 ```
 📅 **I'm Most Productive on Thursday** 
 
 ```text
-Monday                   2808 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.17 % 
+Monday                   2814 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.20 % 
 Tuesday                  3349 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.52 % 
 Wednesday                3417 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.81 % 
 Thursday                 3928 commits        ████░░░░░░░░░░░░░░░░░░░░░   17.03 % 
 Friday                   3864 commits        ████░░░░░░░░░░░░░░░░░░░░░   16.75 % 
 Saturday                 2983 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.93 % 
-Sunday                   2716 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.78 % 
+Sunday                   2716 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.77 % 
 ```
 
 
@@ -83,30 +83,29 @@ Sunday                   2716 commits        ███░░░░░░░░�
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 19 hrs 45 mins (60.81%)
+⏱ AI Coding Time: 13 hrs 58 mins (63.33%)
 
-✍️ 9,337 lines written by AI, 481 lines written by hand (95.1% AI-written)
+✍️ 5,757 lines written by AI, 277 lines written by hand (95.41% AI-written)
 
-🔤 269,665,869 Input Tokens, 2,636,054 Output Tokens
+🔤 202,587,952 Input Tokens, 3,831,669 Output Tokens
 
-💵 $2540.56 Estimated AI Cost This Week
+💵 $1097.05 Estimated AI Cost This Week
 
-🧠 46 AI Sessions, 749 AI Prompts
+🧠 27 AI Sessions, 506 AI Prompts
 
-Claude-Code              5,057 lines         █████████████░░░░░░░░░░░░   52.24 % 
-GPT                      2,804 lines         ███████░░░░░░░░░░░░░░░░░░   28.96 % 
-Deepseek                 1,820 lines         █████░░░░░░░░░░░░░░░░░░░░   18.80 % 
-Codex-Vscode             0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+GPT                      2,397 lines         ██████████░░░░░░░░░░░░░░░   40.63 % 
+Claude-Code              1,932 lines         ████████░░░░░░░░░░░░░░░░░   32.75 % 
+Deepseek                 1,571 lines         ███████░░░░░░░░░░░░░░░░░░   26.63 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 95.1% of written lines came from AI
-📚 Verbose Prompter — average 7,479 characters per prompt
-🔁 Iterative Prompter — average 16 prompts per session
-🚀 High AI Trust — 12.31% of changed lines were hand-edited
+🤖 AI-Driven — 95.41% of written lines came from AI
+📚 Verbose Prompter — average 5,236 characters per prompt
+🔁 Iterative Prompter — average 19 prompts per session
+🚀 High AI Trust — 28.12% of changed lines were hand-edited
 ```
 
 
- Last Updated on 27/09/2026 19:03:34 UTC
+ Last Updated on 28/09/2026 21:17:05 UTC
 <!--END_SECTION:waka-->
 
 <!--SPORTS:START-->
