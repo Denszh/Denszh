@@ -45,29 +45,29 @@ all time · 13.0B tokens · 83,618 messages
 WakaTime👨‍💻
 ---
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-2%2C890%20hrs%204%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-2%2C895%20hrs%2051%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-329%20hrs%207%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-335%20hrs%2047%20mins-blue?style=flat)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue?style=flat)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-781.04%20thousand%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-781.06%20thousand%20lines%20of%20code-blue?style=flat)
 
 **I'm a Night 🦉** 
 
 ```text
 🌞 Morning                972 commits         █░░░░░░░░░░░░░░░░░░░░░░░░   04.21 % 
 🌆 Daytime                1653 commits        ██░░░░░░░░░░░░░░░░░░░░░░░   07.16 % 
-🌃 Evening                17552 commits       ███████████████████░░░░░░   76.08 % 
-🌙 Night                  2894 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.54 % 
+🌃 Evening                17552 commits       ███████████████████░░░░░░   76.07 % 
+🌙 Night                  2895 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.55 % 
 ```
 📅 **I'm Most Productive on Thursday** 
 
 ```text
 Monday                   2814 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.20 % 
-Tuesday                  3349 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.52 % 
+Tuesday                  3350 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.52 % 
 Wednesday                3417 commits        ████░░░░░░░░░░░░░░░░░░░░░   14.81 % 
-Thursday                 3928 commits        ████░░░░░░░░░░░░░░░░░░░░░   17.03 % 
+Thursday                 3928 commits        ████░░░░░░░░░░░░░░░░░░░░░   17.02 % 
 Friday                   3864 commits        ████░░░░░░░░░░░░░░░░░░░░░   16.75 % 
 Saturday                 2983 commits        ███░░░░░░░░░░░░░░░░░░░░░░   12.93 % 
 Sunday                   2716 commits        ███░░░░░░░░░░░░░░░░░░░░░░   11.77 % 
@@ -83,29 +83,31 @@ Sunday                   2716 commits        ███░░░░░░░░�
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 13 hrs 58 mins (63.33%)
+⏱ AI Coding Time: 17 hrs 33 mins (76.06%)
 
-✍️ 5,757 lines written by AI, 277 lines written by hand (95.41% AI-written)
+✍️ 14,486 lines written by AI, 284 lines written by hand (98.08% AI-written)
 
-🔤 202,587,952 Input Tokens, 3,831,669 Output Tokens
+🔤 487,896,293 Input Tokens, 5,837,734 Output Tokens
 
-💵 $1097.05 Estimated AI Cost This Week
+💵 $2778.33 Estimated AI Cost This Week
 
-🧠 27 AI Sessions, 506 AI Prompts
+🧠 31 AI Sessions, 215 AI Prompts
 
-GPT                      2,397 lines         ██████████░░░░░░░░░░░░░░░   40.63 % 
-Claude-Code              1,932 lines         ████████░░░░░░░░░░░░░░░░░   32.75 % 
-Deepseek                 1,571 lines         ███████░░░░░░░░░░░░░░░░░░   26.63 % 
+Claude-Code              10,730 lines        ███████████████████░░░░░░   74.81 % 
+Deepseek                 2,441 lines         ████░░░░░░░░░░░░░░░░░░░░░   17.02 % 
+GPT                      874 lines           ██░░░░░░░░░░░░░░░░░░░░░░░   06.09 % 
+ZCode                    298 lines           █░░░░░░░░░░░░░░░░░░░░░░░░   02.08 % 
+GLM                      0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 95.41% of written lines came from AI
-📚 Verbose Prompter — average 5,236 characters per prompt
-🔁 Iterative Prompter — average 19 prompts per session
-🚀 High AI Trust — 28.12% of changed lines were hand-edited
+🤖 AI-Driven — 98.08% of written lines came from AI
+📝 Concise Prompter — average 238 characters per prompt
+🔁 Iterative Prompter — average 7 prompts per session
+🚀 High AI Trust — 16.07% of changed lines were hand-edited
 ```
 
 
- Last Updated on 28/09/2026 21:17:05 UTC
+ Last Updated on 29/09/2026 20:03:48 UTC
 <!--END_SECTION:waka-->
 
 <!--SPORTS:START-->
