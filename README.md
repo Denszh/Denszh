@@ -121,9 +121,9 @@ Claude-Code              0 lines             ░░░░░░░░░░░�
 💪 Strength        0h ░░░░░░░░░░░░░░░░░░░░     0%
 ```
 
-![2026 Training Heatmap](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=202611220900)
+![2026 Training Heatmap](https://raw.githubusercontent.com/Denszh/Denszh/main/assets/training-2026.svg?v=202611230927)
 
-**This Week's Workouts** (11/16–11/22):
+**This Week's Workouts** (11/17–11/23):
 ```
 No workouts
 ```
